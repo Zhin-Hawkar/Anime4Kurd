@@ -242,23 +242,23 @@ Mobile: width:273 and height:596
         position:absolute;
         left: 0em;
         top:3.8em;
-        height: 155px;
-        width:279px;
+        height: 200px;
+        width:377px;
     }
     .myimg_1{
         display: block;
         position: absolute;
         left: 0em;
         top:3.8em;
-        height: 155px;
-        width:279px;
+        height: 200px;
+        width:377px;
         
     }
     .left-button{
         position: absolute;
         left: 0em;
         top:3.3em;
-        height: 157px;
+        height: 202px;
         width:35px;
         color: #f4f4f5;
         background-color:#52525b89;
@@ -271,9 +271,9 @@ Mobile: width:273 and height:596
     }
      .right-button{
         position: absolute;
-        left: 13.57em;
+        left: 18.97em;
         top:3.3em;
-        height: 157px;
+        height: 202px;
         width:35px;
         color: #f4f4f5;
         background-color:#52525b89;
@@ -298,7 +298,7 @@ Mobile: width:273 and height:596
         display: inline-block;
         transition: 0.6s ease;
         position: relative;
-        top:11.5em;
+        top:14.5em;
     
     }
     .active, .dots:hover{
@@ -335,42 +335,42 @@ right:0.1em;
 
 }
 .new_manga{
-width: 340px;
+width: 375px;
 }
 .new_manga img{
     height: 140px;
     width:100px;
     position: relative;
     display: inline-block;
-    left:6em;
+    left: 1em;
     padding:7px;
     
    
 }
 .action{
-    width: 340px;
-    margin-top: 90px;
+    width: 375px;
+    margin-top: 5px;
 }
 .action img{
     height: 140px;
     width:100px;
     position: relative;
     display: inline-block;
-    left:6em;
+    left:1em;
     top: 4em;
     padding: 7px;
     
 }
 .shonen{
-    width: 340px;
-    margin-top: 90px;
+    width: 375px;
+    margin-top: 70px;
 }
 .shonen img{
     height: 140px;
     width:100px;
     position: relative;
     display: inline-block;
-    left:6em;
+    left:1em;
     top: 4em;
     padding: 7px;
 }

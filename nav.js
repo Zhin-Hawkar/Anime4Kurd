@@ -3,7 +3,7 @@ function closeNav(){
    
 }
 function openNav(){
-document.getElementById("MySideNav").style.width="279px";
+document.getElementById("MySideNav").style.width="377px";
 }  
 
 let Slides= 1 ;
