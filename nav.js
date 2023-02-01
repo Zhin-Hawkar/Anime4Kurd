@@ -7,6 +7,7 @@ document.getElementById("MySideNav").style.width="100%";
 }  
 
 let Slides= 1 ;
+
 showDivs(Slides);
 
 function Clicks(n){
@@ -23,7 +24,7 @@ function showDivs(n){
 
     if(n>x.length){
         Slides= 1 ;
-    }
+    }else
     if(n<1){
         Slides = x.length;
     }
@@ -43,6 +44,7 @@ for(i=0; i<z.length; i++){
 
 x[Slides-1].style.display="block";
 z[Slides-1].className += " active";
-setTimeout(showDivs,2000);
+setTimeout(showDivs,50);
 
 }
+

@@ -5,19 +5,52 @@
      <link rel="stylesheet" href="style.css">
 </head>   
 <script src="nav.js"></script>
+
 <title>Manga4Kurd</title>
+
 <body class="body">
 
 <div class="top-bar top-bar_mob">
      <div class="header faded-img">
-<h1>
-     Manga4Kurd
+          <div class="Hnav">
+               <a href="#">سەرەتا</a>
+               <a href="#">ئەنیمی</a>
+               <a href="#">مانگا</a>
+               <a href="#">کەسایەتیەکان</a>
+          </div>
+<h1 id="demo">
+    
 </h1>
+<script>
+let txts=["Anime4Kurd","Manga4Kurd"];
+let index=0;
+const calltag=document.getElementById("demo");
+const typer=(txt, n)=>{
+     if(n<txt.length){
+      calltag.innerHTML+=txt.charAt(n);
+      setTimeout(function(){
+          typer(txt, n+1);
+      }, 150);
+     }else{
+         setTimeout(function(){
+          calltag.innerHTML="";
+          index++;
+          if(index===txts.length){
+               index=0;
+          }
+          typer(txts[index], 0);
+         }, 1000);
+
+     }
+};
+typer(txts[index], 0);
+</script>
+
      </div>
      <div id="MySideNav" class="Navbar" style="width:0px;">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
           <a href="#">سەرەتا</a>
-          <a href="#">پڕۆفایل</a>
+          <a href="#">ئەنیمی</a>
           <a href="#">مانگا</a>
           <a href="#">کەسایەتیەکان</a>
           <img src="img/Eren-Jaeger-PNG-Photos.png" style="width:350px; height:450px; position:relative; top:7em; left:2em; z-index:+1;">
@@ -41,7 +74,7 @@
       </a>
 
 <a class="btn " href="javascript:void(0)">
-     <img class="myimg" src="img/9hFdCnF.jpg" >
+     <img class="myimg" src="img/9hFdCnF.jpg">
      
      </a>
 
@@ -70,27 +103,28 @@
      <span class="dots" onclick="Dots(3)"></span>
      <span class="dots" onclick="Dots(4)"></span>
      <span class="dots" onclick="Dots(5)"></span>
-     <span class="dots" onclick="Dots(5)"></span>
+     <span class="dots" onclick="Dots(6)"></span>
      
 </div>
+
+
 
 <div class="all_lists">
      
      <div class="new_manga">
      <h2 style="float: right; position: absolute; top: -2.5em; right:0.5em;  ">نوێترین</h2>
-     <hr size="2px" width="100%" color="black" style="box-shadow: 2px 4px 9px 3px #374151;">
      <a href="#"><img src="img/Kimetsu_no_Yaiba_V23.webp"></a>
      <a href="#"><img src="img/yellowcover.webp"></a>
      <a href="#"><img src="img/Jujutsu-Kaisen-manga-reveals-cover-for-volume-17.jpg"></a>
      <a href="#"><img src="img/2022-09-21 16.23.01.jpg"></a>
      <a href="#"><img src="img/My-Hero-Academia-Vol-30-Cover.jpg"></a>
      <a href="#"><img src="img/voI100-scaled.webp"></a>
-      <hr size="2px" width="100%" color="black" style="box-shadow: 2px -4px 9px 3px #374151;">
+      <hr size="2px" width="109%" color="black" style="box-shadow: 2px -4px 9px 3px #374151;">
      </div>
 
      
      <div class="action">
-          <h2 style="float: right; position: absolute; right:0.5em; ">سەرکێشی</h2> 
+          <h2 style="float: right; position: absolute; right:0.5em;">سەرکێشی</h2> 
           <a href="#"><img src="img/51U32pESRlL.jpg"></a>
           <a href="#"><img src="img/Volume_1.webp"></a>
           <a href="#"><img src="img/Kimetsu_no_Yaiba_V1.webp"></a>
@@ -117,7 +151,7 @@
           <a href="#"><img src="img/images (5).jpeg"></a>
           <a href="#"><img src="img/Volume_1 (4).webp"></a>
           
-          <hr size="2px" width="100%" color="black" style="box-shadow: 2px -4px 9px 3px #374151; position: relative; top: 4em;">
+          <hr size="2px" width="109%" color="black" style="box-shadow: 2px -4px 9px 3px #374151; position: relative; top: 4em;">
      </div>
      
      <div class="shonen">
@@ -143,7 +177,6 @@
           <a href="#"><img src="img/Volume_1 (4).webp"></a>
      </div>
 </div>
-
 </body>
 </html>
 
