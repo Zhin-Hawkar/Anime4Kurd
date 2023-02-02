@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="c.css">
+        <title>کەسایەتیەکان</title>
+    </head>
+    <script src="c.js"></script>
+    <body class="body">
+        
+        <div class="top-bar top-bar_mob">
+             <div class="header faded-img">
+                  <div class="Hnav">
+                       <a href="index.html">سەرەتا</a>
+                       <a href="a.html">ئەنیمی</a>
+                       <a href="m.html">مانگا</a>
+                       <a href="c.html">کەسایەتیەکان</a>
+                  </div>
+        <h1 id="webname">
+            
+        </h1>
+        <script>
+        let index=0;
+        let texts=["Manga4Kurd", "Anime4Kurd"];
+        let calltag=document.getElementById("webname");
+        let typer=(txt, n)=>{
+             if(n<txt.length){
+                calltag.innerHTML+=txt.charAt(n);
+                setTimeout(()=>{
+                  typer(txt, n+1);
+                }, 100);
+                
+             }else{
+                  setTimeout(() => {
+                       calltag.innerHTML="";
+                       index++;
+                       if(index===texts.length){
+                            index=0;
+                       }
+                       typer(texts[index], 0);
+                       
+                  }, 1000);
+             }
+        };
+        typer(texts[index], 0);
+        </script>
+
+</div>
+<div id="MySideNav" class="Navbar" style="width:0px;">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+     <a href="index.html">سەرەتا</a>
+     <a href="a.html">ئەنیمی</a>
+     <a href="m.html">مانگا</a>
+     <a href="c.html">کەسایەتیەکان</a>
+     <img src="img/Eren-Jaeger-PNG-Photos.png" style="width:350px; height:450px; position:relative; top:7em; left:2em; z-index:+1;">
+     </div>
+     <span  style="font-size:25px; cursor:pointer; padding:10px; position: fixed; top: 0.2em;" onclick="openNav()">☰</span>
+</div>
+<div class="list_characters">
+     <a><img src="img/834-8346051_onepiece-sticker-luffy-full-body-one-piece.png" style=" position:absolute; top:3.7em; height:180px; width:150px;"><p>Name: Monkey D. Luffy<br><br>Age: 19 Years<br><br>Role: Main Character<br><br>Anime: One Piece</p></a>
+     <a><img src="img/Eren-Jaeger-PNG-Photos.png" style=" position:absolute; top:1.7em; height:200px; width:150px;"><p>Name: Eren Jaeger<br><br>Age: 21 Years<br><br> Role: Main Character<br><br>Anime: Attack on Titan</p></a>
+     <a><p>ناو: مۆنکی دی لوفی</p></a>
+   
+   
+  
+
+   
+
+</div>
+
+
+     </body>
+</html>
