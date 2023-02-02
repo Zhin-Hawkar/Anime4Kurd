@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <link rel="stylesheet" href="characters/c.css">
+        <title>کەسایەتیەکان</title>
+    </head>
+    
+    <body class="body">
+        <script src="characters/c.js"></script>
+        <div class="top-bar top-bar_mob">
+             <div class="header faded-img">
+                  <div class="Hnav">
+                       <a href="index.html">سەرەتا</a>
+                       <a href="#">ئەنیمی</a>
+                       <a href="#">مانگا</a>
+                       <a href="characters/c.html">کەسایەتیەکان</a>
+                  </div>
+        <h1 id="webname">
+            
+        </h1>
+        <script>
+        let index=0;
+        let texts=["Manga4Kurd", "Anime4Kurd"];
+        let calltag=document.getElementById("webname");
+        let typer=(txt, n)=>{
+             if(n<txt.length){
+                calltag.innerHTML+=txt.charAt(n);
+                setTimeout(()=>{
+                  typer(txt, n+1);
+                }, 100);  
+             }else{
+                  setTimeout(() => {
+                       calltag.innerHTML="";
+                       index++;
+                       if(index===texts.length){
+                            index=0;
+                       }
+                       typer(texts[index], 0);
+                  }, 1000);
+             }
+        };
+        typer(texts[index], 0);
+        </script>
+        </body>
+</html>

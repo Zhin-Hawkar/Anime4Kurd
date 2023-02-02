@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>  
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
 </head>   
 <script src="nav.js"></script>
@@ -13,37 +13,36 @@
 <div class="top-bar top-bar_mob">
      <div class="header faded-img">
           <div class="Hnav">
-               <a href="#">سەرەتا</a>
+               <a href="index.html">سەرەتا</a>
                <a href="#">ئەنیمی</a>
                <a href="#">مانگا</a>
-               <a href="#">کەسایەتیەکان</a>
+               <a href="characters/c.html">کەسایەتیەکان</a>
           </div>
-<h1 id="demo">
+<h1 id="webname">
     
 </h1>
 <script>
-let txts=["Anime4Kurd","Manga4Kurd"];
 let index=0;
-const calltag=document.getElementById("demo");
-const typer=(txt, n)=>{
+let texts=["Manga4Kurd", "Anime4Kurd"];
+let calltag=document.getElementById("webname");
+let typer=(txt, n)=>{
      if(n<txt.length){
-      calltag.innerHTML+=txt.charAt(n);
-      setTimeout(function(){
+        calltag.innerHTML+=txt.charAt(n);
+        setTimeout(()=>{
           typer(txt, n+1);
-      }, 150);
+        }, 100);  
      }else{
-         setTimeout(function(){
-          calltag.innerHTML="";
-          index++;
-          if(index===txts.length){
-               index=0;
-          }
-          typer(txts[index], 0);
-         }, 1000);
-
+          setTimeout(() => {
+               calltag.innerHTML="";
+               index++;
+               if(index===texts.length){
+                    index=0;
+               }
+               typer(texts[index], 0);
+          }, 1000);
      }
 };
-typer(txts[index], 0);
+typer(texts[index], 0);
 </script>
 
      </div>
