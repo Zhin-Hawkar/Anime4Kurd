@@ -93,11 +93,10 @@
     }
     .list_characters a:hover{
         width:400px;
-        height: 280px;
         transition: all .4s;
     }
     
-    a p{
+    p{
         position: absolute;
         width:240px;
         height: 290px;
@@ -229,11 +228,10 @@ mobile= min-width:100px and max-width:200px
 }
 .list_characters a:hover{
     width:250px;
-    height: 280px;
     transition: all .4s;
 }
 
-a p{
+ p{
     position: absolute;
     width:240px;
     height: 290px;
@@ -358,7 +356,6 @@ Mobile: min-width:200px and max-width:300px
 }
 .list_characters a:hover{
     width:250px;
-    height: 280px;
     transition: all .4s;
 }
 
@@ -479,11 +476,10 @@ Mobile: min-width:301px and max-width:401px
         cursor:pointer;
         margin:2em;
         left: 0em;
-        transition: all .5s;
+        transition: all .4s;
     }
     .list_characters a:hover{
         width:250px;
-        height: 280px;
         transition: all .4s;
     }
     
@@ -596,7 +592,7 @@ Mobile: min-width:400px and max-width:500px
 .list_characters{
     position: absolute;
     height: auto;
-    width:85%;
+    width:86%;
     top:5em;
     left:0;
     
@@ -610,15 +606,14 @@ Mobile: min-width:400px and max-width:500px
     cursor:pointer;
     margin:2em;
     left: 0em;
-    transition: all .5s;
+    transition: all .4s;
 }
 .list_characters a:hover{
-    width: 310px;
-    height: 270px;
+    width: 325px;
     transition: all .4s;
 }
 
-a p{
+ p{
     position: absolute;
     width:240px;
     height: 290px;
@@ -629,7 +624,7 @@ a p{
 
 p{
     position: absolute;
-    left: 11em;
+    left: 12em;
 }
 a:hover p{
     display: block;
